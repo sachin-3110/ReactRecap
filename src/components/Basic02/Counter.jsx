@@ -49,7 +49,8 @@ const Counter = ({ shadow }) => {
         if (count >= 20) {
             alert("max limit reached")
         }
-        count = count + 5
+        if(count<=20){
+        count = count + 5}
         setCount(count)
     }
     const sub5 = () => {

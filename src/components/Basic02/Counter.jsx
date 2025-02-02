@@ -48,7 +48,7 @@ const Counter = ({ shadow }) => {
         }
         if (count <= MaxLimit) {
             count = count + 5
-            if(count===MaxLimit+5){
+            if(count===MaxLimit+5 || count>MaxLimit){
                 count=MaxLimit
             }
         }
@@ -58,7 +58,7 @@ const Counter = ({ shadow }) => {
         if (count < 0) {
             alert("Count is zero")
         }
-        else if(count>0&& count<3){
+        else if(count>0 && count<=4){
             count=0
         }
         

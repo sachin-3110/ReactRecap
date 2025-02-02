@@ -58,7 +58,7 @@ const Counter = ({ shadow }) => {
         if (count < 0) {
             alert("Count is zero")
         }
-        else if(count>0|| count<3){
+        else if(count>0&& count<3){
             count=0
         }
         

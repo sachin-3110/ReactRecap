@@ -56,8 +56,12 @@ const Counter = ({ shadow }) => {
     }
     const sub5 = () => {
         if (count < 0) {
-
+            alert("Count is zero")
         }
+        else if(count>0|| count<3){
+            count=0
+        }
+        
         else {
             count = count - 5
             if (count === -5) {
